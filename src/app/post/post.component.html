@@ -1,0 +1,10 @@
+<h1 class="Header">r/Aww</h1>
+<div *ngFor="let p of post.data.children" class="main">
+  <a href="https:reddit.com{{ p.data.permalink }}">
+    <p>{{ p.data.title }}</p>
+    <img src="{{ p.data.thumbnail }}" />
+  </a>
+  <p>Upvotes: {{ p.data.ups }}</p>
+  <p>Awards: {{ p.data.gilded }}</p>
+  <p>Posted By: {{ p.data.author }}</p>
+</div>
